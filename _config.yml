@@ -227,3 +227,5 @@ jekyll-archives:
     category: /categories/:name/
 plugins:
   - jekyll-remote-theme
+
+google-site-verification: uAgQxb39-6tTMCc775F3BDjlrRvkwKOry-zrhLkrIUo
