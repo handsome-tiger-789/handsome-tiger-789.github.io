@@ -74,4 +74,4 @@ public static void main(String[] args) {
 Optional과 같이 NPE 방지를 위한 추가 기술들이 존재하므로 작업에서 좀 더 유리한 패턴과 기술을 적용하도록 하자. <br>
 <br>
 
-git : [https://github.com/sykimtropical/nullObjectPattern](https://github.com/sykimtropical/nullObjectPattern){:target="_blank"}
+git : [https://github.com/handsome-tiger-789/nullObjectPattern](https://github.com/handsome-tiger-789/nullObjectPattern){:target="_blank"}
