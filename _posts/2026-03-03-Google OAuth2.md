@@ -22,7 +22,7 @@ Git : [https://github.com/handsome-tiger-789/google-oauth2](https://github.com/h
 
 
 ![](/assets/img/2026-03-03-img-oauth2/oauth-console.png)<br/>
-프로젝트 상세 > API 및 서비스 > 사용자 인증 정보 메뉴로 들어오면 <br>
+프로젝트 상세 > API 및 서비스 > 사용자 인증 정보 메뉴로 들어오면 <br>
 처음에 OAuth 동의 화면을 구성하라고 나온다. <br>
 
 ![](/assets/img/2026-03-03-img-oauth2/oauth-view-1.png)<br/>

@@ -228,6 +228,5 @@ jekyll-archives:
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
-  - jekyll-feed
 
 google-site-verification: qXQZqaD6x6P7vJpVeSjZQL7FlQhQ3qWVH1NhtfEQ-tY

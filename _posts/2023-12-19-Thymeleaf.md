@@ -3,7 +3,7 @@ layout: post
 title:  "Thymeleaf"
 date:   2023-12-19 11:00:00 +0900
 category: [Spring]
-tags: [Thymeleaf, spring]
+tags: [Thymeleaf, Spring]
 lastmod : 2023-12-19 11:00:00 +0900
 sitemap :
   changefreq : daily

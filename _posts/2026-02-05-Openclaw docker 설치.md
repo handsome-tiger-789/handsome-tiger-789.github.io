@@ -3,7 +3,7 @@ layout: post
 title:  "Openclaw docker 설치"
 date:   2026-02-05 11:00:00 +0900
 category: [오픈소스]
-tags: [오픈소스, AI, docker]
+tags: [오픈소스, AI, Docker]
 lastmod : 2026-02-05 11:00:00 +0900
 sitemap :
 changefreq : daily
