@@ -6,6 +6,5 @@ vendor
 
 README.md
 .DS_Store
-Gemfile.lock
 /node_modules/
 /package-lock.json
