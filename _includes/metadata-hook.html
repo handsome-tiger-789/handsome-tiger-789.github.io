@@ -36,6 +36,11 @@
 }
 </script>
 
+{%- if page.layout == 'post' and page.tags.size > 0 -%}
+<!-- Keywords meta (AEO/SEO keyword signal from tags) -->
+<meta name="keywords" content="{{ page.tags | join: ', ' }}" />
+{%- endif -%}
+
 {%- if page.layout == 'post' -%}
 <!-- BreadcrumbList schema for posts -->
 <script type="application/ld+json">
@@ -53,7 +58,7 @@
       "@type": "ListItem",
       "position": 2,
       "name": {{ page.categories[0] | jsonify }},
-      "item": {{ '/categories/' | append: page.categories[0] | slugify | append: '/' | absolute_url | jsonify }}
+      "item": {{ page.categories[0] | slugify | prepend: '/categories/' | append: '/' | absolute_url | jsonify }}
     },
     {
       "@type": "ListItem",

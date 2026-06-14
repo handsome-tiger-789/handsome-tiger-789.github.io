@@ -37,5 +37,5 @@ description: 백엔드 개발자의 기술 블로그 소개와 다루는 주제,
 
 ## 컨택트
 
-- GitHub: [handsome-tiger-789](https://github.com/handsome-tiger-789)
+- GitHub: [handsome-tiger-789](https://github.com/handsome-tiger-789){:target="_blank"}
 - Email: tropical7890@gmail.com

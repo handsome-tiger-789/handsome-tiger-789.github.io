@@ -41,7 +41,13 @@ permalink: /feed.xml
 
   {% if post.categories %}
     {% for category in post.categories %}
-    <category term="{{ category }}" />
+    <category term="{{ category }}" scheme="category" />
+    {% endfor %}
+  {% endif %}
+
+  {% if post.tags %}
+    {% for tag in post.tags %}
+    <category term="{{ tag }}" scheme="tag" />
     {% endfor %}
   {% endif %}
 
