@@ -1,1 +1,75 @@
-<!-- A placeholder to allow defining custom metadata -->
+<!-- Additional structured data for SEO/AEO/GEO -->
+
+<!-- Naver Search Advisor verification (Chirpy's webmaster_verifications doesn't support naver) -->
+<meta name="naver-site-verification" content="11556f3d4afc51ec6756f066c57d82fcbc9fd17e" />
+
+{%- assign author_name = site.social.name -%}
+{%- assign author_url = site.social.links[0] -%}
+{%- assign site_url = '/' | absolute_url -%}
+
+<!-- WebSite schema (site-wide identity) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | strip_newlines | strip | jsonify }},
+  "url": {{ site_url | jsonify }},
+  "inLanguage": {{ site.lang | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ author_name | jsonify }},
+    "url": {{ author_url | jsonify }}
+  }
+}
+</script>
+
+<!-- Person schema (author E-E-A-T) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ author_name | jsonify }},
+  "url": {{ site_url | jsonify }},
+  "email": {{ site.social.email | jsonify }},
+  "sameAs": {{ site.social.links | jsonify }}
+}
+</script>
+
+{%- if page.layout == 'post' -%}
+<!-- BreadcrumbList schema for posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site_url | jsonify }}
+    }{%- if page.categories.size > 0 -%},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.categories[0] | jsonify }},
+      "item": {{ '/categories/' | append: page.categories[0] | slugify | append: '/' | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }
+    {%- else -%},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | jsonify }},
+      "item": {{ page.url | absolute_url | jsonify }}
+    }
+    {%- endif -%}
+  ]
+}
+</script>
+{%- endif -%}
